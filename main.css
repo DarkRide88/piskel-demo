@@ -3,7 +3,10 @@
 
 canvas {
   display: inline-block;
-  background-image: url(/src/screens/canvas/images/background.jpg); }
+  background-image: url(images/background.jpg); }
+
+.canvasSmall {
+  background-image: url(images/background-mini2.jpg); }
 
 #canvasSmall {
   float: left; }
@@ -46,7 +49,8 @@ main {
   grid-area: tools; }
 
 .colors {
-  grid-area: colors; }
+  grid-area: colors;
+  position: relative; }
 
 .frames {
   grid-area: frames; }
@@ -66,13 +70,14 @@ main {
 
 .tool, .color {
   height: 40px;
-  padding-left: 16px;
+  padding-left: 12px;
   vertical-align: middle;
   line-height: 43px; }
 
 .color {
   position: relative;
-  z-index: 2; }
+  z-index: 2;
+  margin-left: 5px; }
 
 hr {
   margin-top: 20px;
@@ -103,7 +108,8 @@ hr {
 
 .primary-color {
   background-color: black;
-  position: absolute; }
+  position: absolute;
+  left: 15px; }
 
 .secondary-color {
   background-color: white;
@@ -236,6 +242,37 @@ input::placeholder {
 
 .active {
   box-shadow: 0px 1px 0px 5px rgba(255, 238, 0, 0.99); }
+
+.canvSize {
+  text-align: center; }
+
+.tool img {
+  width: 20px; }
+
+.keybord {
+  width: 50px;
+  position: absolute;
+  bottom: 10px;
+  left: 20px; 
+  cursor: pointer;}
+
+.popUp {
+  display: none; }
+
+.popUpKeyBord {
+  position: absolute;
+  background: white;
+  bottom: -70px;
+  display: block;
+  width: 150px;
+  height: 80px;
+  border-top: none;
+  border-radius: 5px;
+  box-shadow: 0px 8px 8px 0px #a19ea1; }
+
+.popUpKeyBord div {
+  margin-top: 5px;
+  padding-left: 10px; }
 
 
 /*# sourceMappingURL=main.css.map*/

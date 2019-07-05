@@ -13,26 +13,29 @@
   <main>
       <aside class="tools">
           <div class="tool">
-              <img src="images/backet.png" alt="" id="backet">
-              <span class="tools-text">Paint bucket</span>
+              <img src="images/pen.png" alt="" id="pen">
+              <span class="tools-text">Pen Tool </span>
           </div>
           <div class="tool">
               <img src="images/choose.png" alt="" id="colorChoose">
-              <span class="tools-text">Choose color</span>
+              <span class="tools-text">under development</span>
           </div>
           <hr>
           <div class="tool">
               <img src="images/moove.png" alt="" id="move">
-              <span class="tools-text">Move</span>
+              <span class="tools-text">under development</span>
           </div>
           <div class="tool">
               <img src="images/transform.png" alt="" id="transform">
-              <span class="tools-text">Transform</span>
+              <span class="tools-text">under development</span>
           </div>
 
       </aside>
       <aside class="colors">
-
+        <div class="tool">
+          <img src="images/transform.png" alt="" id="transform">
+          <span class="tools-text">Choose Color</span>
+        </div>
         <div class="color">
             <div class="color-picker primary-color"></div>
             <div class="" id="popUp">
@@ -46,16 +49,22 @@
         <div class="color">
             <div class="color-picker secondary-color"></div>
         </div>
+        <img src="images/keybord.png" class='keybord' id="keybord" alt="">
+        <div class="popUp" id="popUpKeybord">
+          <div>P - pen tool</div>
+
+        </div>
       </aside>
       <div class="frames" id="framesView">
         <div class="frameContainer">
           <canvas id="canvasSmall" class="canvasSmall" data-frameNumber='0' width="110" height="110">Not working</canvas>
+
         </div>
 
         <br>
         <!-- <canvas id="canvasSmall" class="canvasSmall" data-frameNumber='1' width="150" height="150">Not working</canvas> -->
         <div id="addFrameBlock"><button id='addFrame' class="btn btn-add">Add new frame</button></div>
-        <div><button id="fullscreen">Fullscreen</button></div>
+        <!-- <div><button id="fullscreen">Fullscreen</button></div> -->
       </div>
       <section class="canvas">
         <canvas id="canvas">Not working</canvas>
@@ -68,6 +77,7 @@
         <input type="text" value="" id="pixelCount" placeholder="Canvas size">
         <br><br>
         <button id="setPixelCount">Set pixel count</button>
+        <div class="canvSize" id='coords'>[ 0 x 0 ]</div>
       </section>
   </main>
 <script type="text/javascript" src="app.bundle.js"></script></body>
